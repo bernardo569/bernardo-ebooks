@@ -420,3 +420,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 186, 36, .8
 .offer-card-logo { display: block; width: 31px; height: 36px; object-fit: contain; }
 .catalog-back, .offer-back { display: block; margin-top: 20px; }
 .offer-page-shell .offer-back { color: #f6c53f; }
+.payment-old-price { display: inline-block; margin-right: 6px; color: #9a9a92; font-size: 12px; text-decoration: line-through; text-decoration-thickness: 1.5px; }
+.phone-toplink { display: inline-flex; align-items: center; gap: 6px; color: #f6c53f; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.phone-toplink:hover { color: #fff; }
+@media (max-width: 620px) { .topline-inner { justify-content: flex-end; } .topline-detail { display: none; } .phone-toplink { font-size: 10px; } }
