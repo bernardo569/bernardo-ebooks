@@ -84,7 +84,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 186, 36, .8
 .site-header { position: absolute; z-index: 10; top: 32px; left: 0; width: 100%; color: #fff; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; min-height: 87px; border-bottom: 1px solid rgba(255,255,255,.19); }
 .brand-mark { display: inline-flex; align-items: center; gap: 11px; }
-.brand-monogram { display: grid; place-items: center; width: 39px; height: 39px; border: 1px solid currentColor; border-radius: 50%; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: -.08em; }
 .brand-name { font-family: 'Space Grotesk', sans-serif; font-size: 13px; line-height: .95; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
 .brand-name em { color: #f6c63c; font-style: normal; }
 .desktop-nav { display: flex; gap: 34px; align-items: center; margin-left: 110px; }
@@ -196,7 +195,6 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 186, 36, .8
 .offer-quote p { max-width: 230px; margin: 0; color: rgba(255,255,255,.8); font-family: 'Space Grotesk', sans-serif; font-size: 13px; line-height: 1.45; }
 .offer-card { position: relative; padding: 30px; border: 1px solid rgba(255,255,255,.13); background: #fffdf8; color: #18213a; box-shadow: 0 28px 65px rgba(0,0,0,.23); }
 .offer-card-top { display: flex; justify-content: space-between; align-items: center; color: #8a8a83; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.offer-card-mark { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #10234b; color: #f6c53f; font-family: 'Space Grotesk', sans-serif; font-size: 9px; letter-spacing: -.1em; }
 .mini-covers { display: flex; align-items: end; height: 130px; margin: 27px 0 23px; padding-left: 28px; }
 .mini-covers img { width: 88px; height: 118px; object-fit: cover; object-position: top; border: 4px solid #f4efe6; box-shadow: 4px 7px 13px rgba(0,0,0,.16); }
 .mini-covers img + img { margin-left: -15px; }
@@ -415,3 +413,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 186, 36, .8
 .catalog-page-shell .ebook-image-wrap { height: 310px; padding: 20px 24px 0; }
 .catalog-page-shell .ebook-image-wrap img { object-fit: contain; }
 @media (max-width: 620px) { .offer-page-shell .mini-covers { height: 105px; padding-left: 15px; } .offer-page-shell .mini-covers img { width: 75px; height: 101px; } .catalog-page-shell .ebook-image-wrap { height: 255px; padding: 15px 16px 0; } }
+.brand-logo-img { display: block; width: 40px; height: 43px; object-fit: contain; }
+.site-header .brand-logo-img, .site-footer .brand-logo-img { filter: brightness(0) invert(1); }
+.page-shell:not(.offer-page-shell) .site-header .brand-logo-img { filter: none; }
+.avatar-stack .trust-logo { display: block; width: 25px; height: 28px; object-fit: contain; filter: brightness(0) invert(1); }
+.offer-card-logo { display: block; width: 31px; height: 36px; object-fit: contain; }
+.catalog-back, .offer-back { display: block; margin-top: 20px; }
+.offer-page-shell .offer-back { color: #f6c53f; }
