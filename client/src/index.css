@@ -424,3 +424,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 186, 36, .8
 .phone-toplink { display: inline-flex; align-items: center; gap: 6px; color: #f6c53f; font-size: 10px; font-weight: 700; white-space: nowrap; }
 .phone-toplink:hover { color: #fff; }
 @media (max-width: 620px) { .topline-inner { justify-content: flex-end; } .topline-detail { display: none; } .phone-toplink { font-size: 10px; } }
+.payment-price-banner { display: flex; align-items: center; gap: 12px; padding: 15px 18px; margin: 8px 8px 0; background: #10234b; color: #fff; }
+.payment-price-banner .payment-old-price { margin: 0; color: rgba(255,255,255,.62); font-size: 15px; font-weight: 700; text-decoration-thickness: 2px; }
+.payment-price-banner strong { color: #f6c53f; font-family: 'Space Grotesk', sans-serif; font-size: 28px; letter-spacing: -.07em; }
+.payment-price-banner small { margin-left: auto; color: rgba(255,255,255,.66); font-size: 10px; }
+@media (max-width: 620px) { .payment-price-banner { flex-wrap: wrap; gap: 8px 12px; } .payment-price-banner strong { font-size: 25px; } .payment-price-banner small { width: 100%; margin-left: 0; } }
