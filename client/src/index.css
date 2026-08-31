@@ -402,3 +402,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 186, 36, .8
 .offer-testimonials blockquote cite { margin-top: 13px; }
 .offer-testimonials small { text-align: center; }
 @media (max-width: 620px) { .offer-testimonials { margin-top: 50px; } .offer-testimonials > div, .offer-testimonials blockquote { padding: 22px 10px; } }
+.offer-page-shell .mini-covers { height: 108px; justify-content: center; gap: 9px; margin: 24px 0 22px; padding-left: 0; }
+.offer-page-shell .mini-covers img, .offer-page-shell .mini-covers img + img, .offer-page-shell .mini-covers img:nth-child(1), .offer-page-shell .mini-covers img:nth-child(2), .offer-page-shell .mini-covers img:nth-child(3) { width: 72px; height: 96px; margin-left: 0; transform: none; }
+.offer-page-shell .mini-covers img:nth-child(2) { transform: translateY(-5px); }
+@media (max-width: 620px) { .offer-page-shell .mini-covers { height: 92px; gap: 6px; } .offer-page-shell .mini-covers img, .offer-page-shell .mini-covers img + img, .offer-page-shell .mini-covers img:nth-child(1), .offer-page-shell .mini-covers img:nth-child(2), .offer-page-shell .mini-covers img:nth-child(3) { width: 61px; height: 82px; } }
