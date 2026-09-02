@@ -5,7 +5,7 @@ import NotFound from "@/pages/NotFound";
 import Catalog from "@/pages/Catalog";
 import Offer from "@/pages/Offer";
 import Payment from "@/pages/Payment";
-import { Route, Switch, useLocation } from "wouter";
+import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -21,7 +21,7 @@ function ScrollToTop() {
 }
 
 function Router() {
-  return <Switch><Route path="/" component={Home} /><Route path="/catalogo" component={Catalog} /><Route path="/oferta" component={Offer} /><Route path="/pagamento" component={Payment} /><Route path="/404" component={NotFound} /><Route component={NotFound} /></Switch>;
+  return <WouterRouter base={import.meta.env.BASE_URL}><Switch><Route path="/" component={Home} /><Route path="/catalogo" component={Catalog} /><Route path="/oferta" component={Offer} /><Route path="/pagamento" component={Payment} /><Route path="/404" component={NotFound} /><Route component={NotFound} /></Switch></WouterRouter>;
 }
 
 export default function App() {
