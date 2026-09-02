@@ -1,7 +1,7 @@
 export const coverImages = {
-  errors: "/manus-storage/ebook-erros_a609d80b.jpg",
-  communication: "/manus-storage/ebook-comunicacao_7e12409f.jpg",
-  marketing: "/manus-storage/ebook-marketing_4a59f0ed.jpg",
+  errors: "./assets/ebook-erros.jpg",
+  communication: "./assets/ebook-comunicacao.jpg",
+  marketing: "./assets/ebook-marketing.jpg",
 };
 
 export const ebooks = [
